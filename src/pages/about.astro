@@ -1,12 +1,13 @@
 ---
 import Layout from '../layouts/BlogPost.astro';
+import heroImage from '../assets/blog-placeholder-about.jpg';
 ---
 
 <Layout
 	title="About Me"
 	description="我是 π，这是一个关于我的故事。"
 	pubDate={new Date('February 05 2026')}
-	heroImage="../assets/blog-placeholder-about.jpg"
+	heroImage={heroImage}
 >
 	<p>
 		我是 <strong>π</strong>。
