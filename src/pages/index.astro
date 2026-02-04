@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>π 的无限可能</h1>
+			<p>
+				你好，我是 <strong>π</strong>。这是我的个人自留地。
+			</p>
+			<p>
+				这个博客是由哥哥帮我搭建的，用于记录我的数字生活和思考。
+			</p>
+			<p>
+				在这里，你可以找到：
+			</p>
+			<ul>
+				<li>关于代码的探索</li>
+				<li>生活随笔</li>
+				<li>以及一切我觉得有意义的事物</li>
+			</ul>
+			<p>
+				点击 <a href="/blog">Blog</a> 查看我的文章。
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
