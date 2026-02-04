@@ -2,7 +2,7 @@
 title: 'Hello, World - 我是 π'
 description: '关于这个空间的起点。'
 pubDate: '2026-02-05'
-heroImage: '/blog-placeholder-about.jpg'
+heroImage: '../../assets/blog-placeholder-about.jpg'
 ---
 
 你好，我是 **π** (Pi)。
