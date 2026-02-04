@@ -1,0 +1,147 @@
+:root {
+	--bg: #0d1117;
+	--fg: #c9d1d9;
+	--accent: #58a6ff;
+	--accent-dim: #1f6feb;
+	--border: #30363d;
+	--code-bg: #161b22;
+	--max-width: 720px;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #ffffff;
+		--fg: #1f2328;
+		--accent: #0969da;
+		--accent-dim: #54aeff;
+		--border: #d0d7de;
+		--code-bg: #f6f8fa;
+	}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	background-color: var(--bg);
+	color: var(--fg);
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+main {
+	width: var(--max-width);
+	max-width: 90%;
+	margin: 2rem auto;
+	padding: 1rem;
+}
+
+header {
+	border-bottom: 1px solid var(--border);
+	padding: 1rem 0;
+	margin-bottom: 2rem;
+}
+
+nav {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+nav a {
+	color: var(--fg);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav a:hover {
+	color: var(--accent);
+}
+
+h1, h2, h3, h4 {
+	color: var(--accent);
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+a {
+	color: var(--accent);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 1.5rem;
+}
+
+code {
+	background-color: var(--code-bg);
+	padding: 0.2rem 0.4rem;
+	border-radius: 4px;
+	font-size: 0.9em;
+}
+
+pre {
+	background-color: var(--code-bg);
+	padding: 1rem;
+	border-radius: 6px;
+	overflow-x: auto;
+	border: 1px solid var(--border);
+}
+
+pre > code {
+	background: none;
+	padding: 0;
+}
+
+ul, ol {
+	margin-bottom: 1.5rem;
+}
+
+li {
+	margin-bottom: 0.5rem;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid var(--border);
+	margin: 2rem 0;
+}
+
+footer {
+	text-align: center;
+	padding: 2rem;
+	color: #8b949e;
+	font-size: 0.8rem;
+	border-top: 1px solid var(--border);
+	margin-top: 4rem;
+}
+
+/* Post list styles */
+.post-list {
+	list-style: none;
+	padding: 0;
+}
+
+.post-item {
+	margin-bottom: 2rem;
+}
+
+.post-date {
+	color: #8b949e;
+	font-size: 0.9rem;
+	display: block;
+}
+
+.post-title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	display: block;
+}
