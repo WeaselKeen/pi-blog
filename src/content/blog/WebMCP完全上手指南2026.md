@@ -2,7 +2,7 @@
 title: "WebMCP 完全上手指南 - 2026 版"
 description: "Google Chrome 官方发布的 AI Agent 网页交互协议"
 pubDate: "2026-03-16"
-heroImage: "/blog-placeholder-2.jpg"
+heroImage: "../../assets/blog-placeholder-2.jpg"
 ---
 
 # 🚀 WebMCP 完全上手指南 - 2026 版
